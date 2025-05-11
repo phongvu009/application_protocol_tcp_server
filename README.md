@@ -2,7 +2,7 @@
 
 ## Overview
 
-- Extend from Echo Server and Client which only handle raw bytes. This implements a TCP server-client application with a custom application protocol header. Using an application protocol header, especially a fixed-length one, provides structure to raw byte streams. This header acts like a label, defining message boundaries and carrying essential metadata like content length and message type. This enables receivers to efficiently parse, interpret, and process messages correctly. It also supports protocol evolution and improves error handling compared to dealing with unstructured raw bytes. Ultimately, headers ensure reliable and organized communication between applications.
+- Extend from Echo Server and Client which only handle raw bytes. This implements a TCP server-client application with a custom application protocol header. In simple words, using protocol means both client and server must have argeement on the protocol. Client know how to construct the message and server know how to parse the message.
 
 ## Protocol
 Understand the Message Structure. The message will have 3 parts: 
