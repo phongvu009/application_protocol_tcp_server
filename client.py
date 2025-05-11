@@ -13,8 +13,8 @@ def run_client(host,port):
 
         #prepare message content
         content = "hello world"
-        content_bytes = content.encode('utf-8') #encode binary -> decimal -> utf-8: text
-        logging.debug(f"Content bytes: {content_bytes}")
+        content_bytes = content.encode('utf-8') #encode text into bytes via ASC-II table
+        logging.debug(f"Content bytes: {content_bytes}") #b'\x48\x65\x6c\x6c\x6f\x2c\x20\x77\x6f\x72\x6c\x64'
         content_length = len(content_bytes) # length of message
         logging.debug(f"Content length: {content_length}")
 
