@@ -12,7 +12,7 @@ def run_client(host,port):
         #instead seding raw bytes , we will send protocol message
 
         #prepare message content
-        content = "Hello, World"
+        content = "hello world"
         content_bytes = content.encode('utf-8') #encode binary -> decimal -> utf-8: text
         logging.debug(f"Content bytes: {content_bytes}")
         content_length = len(content_bytes) # length of message
